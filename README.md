@@ -10,10 +10,13 @@ Here are some capture and if you wanna know about video, you can check my linked
 https://www.linkedin.com/posts/muhammad-irsyad-nur-rais_data-datavisualization-datascience-activity-6823467242752217088-dLh3
 
 1. Full map of zomato indonesia
+
 ![alt text](https://github.com/irsyadnrs/Map-Zomato-Indonesia/blob/main/zomato1.PNG)
 
 2. Hovering a place
+
 ![alt text](https://github.com/irsyadnrs/Map-Zomato-Indonesia/blob/main/zomato%203.png)
 
-3. Hovering + Click a place
+3. Hover + Click a place
+
 ![alt text](https://github.com/irsyadnrs/Map-Zomato-Indonesia/blob/main/zomato2.png)
