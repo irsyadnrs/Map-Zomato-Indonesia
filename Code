@@ -1,0 +1,45 @@
+---
+title: "Porto Leaflet"
+author: "Muhammad Irsyad"
+date: "7/20/2021"
+output: html_document
+---
+
+#Load Library
+```{r}
+library(leaflet)
+library(readr)
+library(dplyr)
+getwd()
+```
+
+#Load Data
+```{r}
+zomato <- read.csv("zomato.csv")
+```
+
+#Pre- Visualization
+```{r}
+#zomato singapore
+zomato_singapore <- zomato %>%
+  filter( City == "Singapore")
+
+#zomato indonesia
+zomato_indo <- zomato %>%
+  filter(Country.Code == 94)
+
+#clear row 17
+zomato_ind <- zomato_indo[-17, ]
+
+```
+
+#Visualization Leaflet
+```{r}
+zomato_ind %>%
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = ~Longitude, lat = ~Latitude, 
+             label = ~Address, 
+             popup = ~rating_cat) %>%
+  addProviderTiles(providers$OpenStreetMap)
+```
